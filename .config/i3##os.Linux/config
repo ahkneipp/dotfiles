@@ -9,8 +9,8 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-# Disable window titlebars to make gaps happy
-for_window [class=".*"] border pixel 0
+# Disable window titlebars to make gaps happy, but keep the borders for indicating focused window
+for_window [class=".*"] border pixel 4
 
 gaps inner 10
 gaps outer 5
@@ -212,12 +212,17 @@ mode "$mode_scrot" {
 }
 bindsym $mod+s mode "$mode_scrot"
 
-set $bg-color            #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676e7d
+set $bar-bg-color            #2f343f
+set $bg-color            #c8791e
+#set $inactive-bg-color   #2f343f
+set $inactive-bg-color   #791ec8
+#set $text-color          #f3f4f5
+set $text-color          #121212
+#set $inactive-text-color #676e7d
+set $inactive-text-color #dbdbdb
 set $urgent-bg-color     #e53935
-set $indicator-color     #a0a0a0
+#set $indicator-color     #a0a0a0
+set $indicator-color     #1ec879
 
 # set window colors
 #                       border             background         text                 indicator
@@ -234,7 +239,7 @@ bar {
     font pango:monospace 9
 
 	colors {
-        background $bg-color
+        background $bar-bg-color
         separator #757575
         #                  border             background         text
         focused_workspace  $bg-color          $bg-color          $text-color
