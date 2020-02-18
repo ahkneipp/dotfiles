@@ -300,7 +300,7 @@ exec --no-startup-id "compton -cC"
 exec --no-startup-id "nm-applet"
 exec --no-startup-id "nitrogen --restore"
 # Autolock the screen after 2 minutes of inactivity if it doesn't detect sleep using i3lock
-exec --no-startup-id "xautolock -detectsleep -time 10 -corners \"--00\" -locker \"i3lock -n -i /home/alex/Pictures/65835.png\""
+exec --no-startup-id "xautolock -detectsleep -time 10 -corners \"--00\" -locker \"i3lock -n -i $HOME/Pictures/Wallpapers/lock_screen\""
 # Show a battery warning at 20% and again at 10%
 exec --no-startup-id "/home/alex/bin/i3-battery-popup/i3-battery-popup -L 20 -m \"Plug in your battery dufus\" -n"
 exec --no-startup-id "conky"
