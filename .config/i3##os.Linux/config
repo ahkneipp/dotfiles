@@ -324,7 +324,7 @@ bindsym $mod+Shift+m exec "/usr/local/bin/switch-audio-port"
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id "compton -cC"
 exec --no-startup-id "nm-applet"
-exec --no-startup-id "nitrogen --restore"
+exec --no-startup-id "feh --no-fehbg --bg-scale $HOME/Pictures/Wallpapers/home_screen"
 # Autolock the screen after 2 minutes of inactivity if it doesn't detect sleep using i3lock
 exec --no-startup-id "xautolock -detectsleep -time 10 -corners \"--00\" -locker \"i3lock -t -n -i $HOME/Pictures/Wallpapers/lock_screen\""
 # Show a battery warning at 20% and again at 10%
